@@ -1,28 +1,42 @@
 .App {
+  display: flex;
+  flex-direction: column;
 }
-
 .App-logo {
   height: 10vmin;
-  pointer-events: none;
 }
 
 .App-header {
+  background-color: yellowgreen;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex: 1;
+}
+.App-header .logo-header {
+  display: inline-flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: flex-start;
+}
+
+.App-header .others-header {
+  display: inline-flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .App-body {
   background-color: darksalmon;
-  min-height: 60%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 8;
 }
 
 .App-footer {
   background-color: gray;
-  min-height: 10%;
+  flex: 1;
 }
 
 /* .App-link {
