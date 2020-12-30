@@ -28,7 +28,7 @@ class Footer extends Component {
 
       <footer className="App-footer">
         <p> 푸터 </p>
-        <img src={logo} className="App-logo" alt="logo" />
+        {/* <img src={logo} className="App-logo" alt="logo" /> */}
       </footer>
     )
   }

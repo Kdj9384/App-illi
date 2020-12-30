@@ -1,8 +1,11 @@
 html,
-body {
+body,
+#root {
   height: 100%;
 }
-body {
+
+.App {
+  height: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -13,22 +16,19 @@ body {
 
 .App-header {
   padding: 20px;
+  flex: 0 0 auto;
   background-color: yellowgreen;
 }
 
 .App-body {
   padding: 20px;
-  flex: 1 0 auto;
-  background-color: darksalmon;
+  flex: 1 1 auto;
 }
 
 .App-footer {
+  padding: 20px;
+  flex: 0 0 auto;
   background-color: gray;
-  flex-shrink: 0;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 /* .App-link {
