@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import illi_logo from './illi_logo.jpg';
 import './App.css';
-import { Component } from 'react';
+import React, { Component } from 'react';
 
 class Header extends Component {
   render() {
@@ -23,12 +23,23 @@ class Header extends Component {
 class Body extends Component {
   render() {
     return (
-      <body className="App-body">
+      <div className="App-body">
           <div className="Body-content"> 
           dd
-          <br></br>
+          <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+          <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+          <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+          <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+          <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+          <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+           <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+          <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+          <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+          <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+          <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+          aa
           </div>
-      </body>
+      </div>
     )
   }
 }
