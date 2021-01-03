@@ -1,5 +1,5 @@
-import logo from './logo.svg';
 import illi_logo from './illi_logo.jpg';
+import footer_img from './footer_img.png'
 import './App.css';
 import React, { Component } from 'react';
 
@@ -24,20 +24,28 @@ class Body extends Component {
   render() {
     return (
       <div className="App-body">
+          <div className="Body-header">
+            <p> 일리 소프트 교육</p>
+            <p> AR콘텐츠를 통한 언플러그드 학습</p>
+          </div>
           <div className="Body-content"> 
-          dd
-          <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
-          <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
-          <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
-          <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
-          <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
-          <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
-           <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
-          <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
-          <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
-          <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
-          <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
-          aa
+           dksjf<br></br>kdsljfk<br></br>dslfjd<br></br>ksjalsk<br></br>
+           djfkd<br></br>lsajfkdl<br></br>sajfkdsal
+           <br></br>
+           fdksa<br></br>jfldks<br></br>jalfkd<br></br>jfklajfdkls<br></br>alfjdkslafjdkslafjdksaf
+           fdjk<br></br>ajv<br></br>fk<br></br>dslajfkds<br></br>alfjdksal<br></br>fjdkslajfkdlsajfkdlsajfkdlas
+           fj<br></br>dksalfjdksajfdlskajfkdalfjdksalfjdlksjafldkajfdklasjf
+           d<br></br><br></br><br></br><br></br><br></br>sjfkdsljfkdslfjdksjalskdjfkdlsajfkdlsajfkdsal
+           fdksajfldksjalfkdjfklajfdklsalfjdkslafjdkslafjdksaf
+           fdj<br></br><br></br>kajfkdslajfkdsalfjdksa<br></br>lfjdkslajfkdlsajfkdlsajfkdlas
+           fjdksalfjdksajfdlskajfkdalfjdks<br></br>alfjdlksjafldkajfdklasjf
+           dksjfkdsljfkdslfjdksjalskdjfkdlsajfkdlsajfkdsal
+           fdksajfldksjalfk<br></br>djfklajfdklsalfjdkslafjdkslafjdksaf
+           fdjkajfkdslajfkdsalfjdksalfjdkslajfkdlsajfkdlsajfkdlas
+           fjdksa<br></br>lfjdksajf<br></br>dlskajfkdalfjdksalf<br></br>jdlksjafldkajfdklasjf
+           <br></br><br></br><br></br><br></br><br></br><br></br>
+           <br></br><br></br><br></br><br></br><br></br>
+           <br></br><br></br><br></br><br></br>
           </div>
       </div>
     )
@@ -49,8 +57,19 @@ class Footer extends Component {
     return (
 
       <footer className="App-footer">
-        <p> 푸터 </p>
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
+        <div className="footer-layout">
+          <div className="footer-text">
+            <p> (주) 일리소프트 (734 - 81 - 01722) </p>
+            <p> 안산시 상록구 한양대학로 55(사동, 창업센터) (5공학관 지하) </p>
+            <p> 대표 안호준  HP : 010 - 4345 - 7940 </p>
+            <p> illisoftofficial@gmail.com </p>
+          </div>
+          <div className="footer-image">
+            <a href=" "><img src={footer_img} alt="contact"/></a>
+          </div>
+
+        </div>
+
       </footer>
     )
   }
