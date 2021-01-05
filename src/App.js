@@ -1,5 +1,9 @@
-import illi_logo from './illi_logo.jpg';
-import footer_img from './footer_img.png'
+import illi_logo from './illi_logo.png';
+import back_img1 from './back_img.png';
+import foo_icon1 from './footer_icon1.png';
+import foo_icon2 from './footer_icon2.png';
+import foo_icon3 from './footer_icon3.png';
+
 import './App.css';
 import React, { Component } from 'react';
 
@@ -25,8 +29,11 @@ class Body extends Component {
     return (
       <div className="App-body">
           <div className="Body-header">
-            <p> 일리 소프트 교육</p>
-            <p> AR콘텐츠를 통한 언플러그드 학습</p>
+            <img src={back_img1} alt="background"/>
+          </div>
+          <div className="Body-title">
+            일리소프트 교육
+            AR 콘텐츠를 통한 언플러그드 학습
           </div>
           <div className="Body-content"> 
            dksjf<br></br>kdsljfk<br></br>dslfjd<br></br>ksjalsk<br></br>
@@ -65,7 +72,9 @@ class Footer extends Component {
             <p> illisoftofficial@gmail.com </p>
           </div>
           <div className="footer-image">
-            <a href=" "><img src={footer_img} alt="contact"/></a>
+            <a href=" "><img src={foo_icon1} alt="call"/></a>
+            <a href=" "><img src={foo_icon2} alt="msg"/></a>
+            <a href=" "><img src={foo_icon3} alt="etc"/></a>
           </div>
 
         </div>
