@@ -47,26 +47,52 @@ body,
 
 .App-body {
   flex: 1 1 auto;
+  background-image: url('./back_img.png');
+  background-repeat: no-repeat;
+  /* background-size: 100% auto; */
 }
 
-.Body-header {
-  overflow: hidden;
+@font-face {
+  font-family: 'TmonMonsori';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/TmonMonsori.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gmarket';
+  src: url('./font/GmarketSansTTFMedium.ttf') format('truetype');
 }
 
 .Body-title {
-  bottom: 100px;
-
+  width: 900px;
+  height: 300px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 100px;
+
+  font-size: 30px;
+  font-family: 'TmonMonsori';
+  color: white;
+}
+
+.Body-title > p {
+  font-size: 50px;
 }
 
 .Body-content {
+  margin-top: 100px;
 
   width: 900px;
+  height: 800px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 150px;
   background-color: #ebebeb;
+}
+
+.font-Gmarket {
+  font-family: 'Gmarket';
 }
 
 .App-footer {
