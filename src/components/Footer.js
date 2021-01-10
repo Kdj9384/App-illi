@@ -1,6 +1,6 @@
-import foo_icon1 from './images/footer_icon1.png';
-import foo_icon2 from './images/footer_icon2.png';
-import foo_icon3 from './images/footer_icon3.png';
+import foo_icon1 from '../images/footer_icon1.png';
+import foo_icon2 from '../images/footer_icon2.png';
+import foo_icon3 from '../images/footer_icon3.png';
 import React, { Component } from 'react';
 
 class Footer extends Component {

@@ -63,7 +63,7 @@ body,
 
 .App-body {
   flex: 1 1 auto;
-  background-image: url('./images/back_img_big.png');
+  background-image: url('../images/back_img_big.png');
   background-repeat: no-repeat;
   background-size: 100%;
   /* background-size: 100% auto; */
@@ -78,12 +78,12 @@ body,
 
 @font-face {
   font-family: 'Gmarket';
-  src: url('./font/GmarketSansTTFLight.ttf') format('truetype');
+  src: url('../font/GmarketSansTTFLight.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'GmarketMedium';
-  src: url('./font/GmarketSansTTFMedium.ttf') format('truetype');
+  src: url('../font/GmarketSansTTFMedium.ttf') format('truetype');
 }
 
 .Body-title {
