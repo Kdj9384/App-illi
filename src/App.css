@@ -106,7 +106,7 @@ body,
   display: flex;
   flex-direction: row;
 
-  height: 350px;
+  height: 360px;
 }
 
 .content-2 {
@@ -115,15 +115,17 @@ body,
 
   display: flex;
   flex-direction: row-reverse;
-  height: 350px;
+  height: 360px;
 }
 
 .content-img {
-  height: 350px;
+  height: 360px;
+  width: 466px;
 }
 
 .content-img img{
   height: 100%;
+  width: 466px;
 }
 
 .content-text {
