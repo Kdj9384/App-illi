@@ -1,5 +1,4 @@
 import './Home.css';
-import Header from '../components/Header.js'
 import Footer from '../components/Footer.js'
 import React, { Component } from 'react';
 
@@ -80,9 +79,7 @@ class App extends Component {
   render () {
     return (
       <div className="App">
-        
-        {/* <Header></Header> */}
-  
+          
         <Body></Body>
   
         <Footer></Footer>

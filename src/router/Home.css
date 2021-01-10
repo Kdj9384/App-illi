@@ -22,15 +22,14 @@ body,
 
   padding-bottom: 10px;
 }
-#logo_a {
+
+.App-header a {
   margin-top: auto;
-  height: 45px;
 }
 
 .illi_logo {
   width: 180px;
   height: 45px;
-  margin-top: auto;
 }
 .Header-nav {
   margin-left: auto;
