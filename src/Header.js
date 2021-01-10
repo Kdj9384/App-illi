@@ -12,24 +12,24 @@ class Header extends Component {
       return (
         <Router>
             <header className="App-header">
-                <Link to='./App' id='logo_a'>
+                <Link to='/App' id='logo_a'>
                     <img src={illi_logo} className="illi_logo" alt="Illi Logo"/>
                 </Link>
                 <nav  className="Header-nav">
                     <ul>
                         <li className="font-Gmarket"> 
-                            <Link to='./Project'>
+                            <Link to='/Project'>
                                 Project
                             </Link> 
                         </li>
                         <li className="font-Gmarket"> 
                         
-                            <Link to='./About'>
+                            <Link to='/About'>
                                 About
                             </Link> 
                         </li>
                         <li className="font-Gmarket"> 
-                            <Link to='./Contact'>
+                            <Link to='/Contact'>
                                 Contact
                             </Link> 
                         </li>
@@ -37,10 +37,10 @@ class Header extends Component {
                 </nav>
             </header>
             <Switch>
-                <Route exact path="./App" component={App}></Route>
-                <Route exact path="./Project" component={Project}></Route>
-                <Route exact path="./About" component={About}></Route>
-                <Route exact path="./Contact" component={Contact}></Route>
+                <Route exact path="/App" component={App}></Route>
+                <Route exact path="/Project" component={Project}></Route>
+                <Route exact path="/About" component={About}></Route>
+                <Route exact path="/Contact" component={Contact}></Route>
             
             </Switch>
         </Router>

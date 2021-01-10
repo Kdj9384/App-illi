@@ -11,8 +11,9 @@ class Body extends Component {
     return (
       <div className="App-body">
           <div className="Body-title">
-            <p>일리소프트 교육 </p>
-            <p>AR 콘텐츠를 통한 언플러그드 학습</p>
+            <p id="title1">인터랙티브 교육의 미래 </p>
+            <p id="title2"> iLLi </p>
+            <p id="title3">AR/VR 콘텐츠 인터랙티브 교육 <br></br> 콘텐츠 제작 & 수업운영</p>
           </div>
           <div className="Body-content"> 
             <div className="content-1">

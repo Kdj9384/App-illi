@@ -50,14 +50,22 @@ body,
 
   margin-right: 20px;
   margin-bottom: 5px;
+
+}
+
+.Header-nav li a {
+  text-decoration: none;
+  color: black;
+  font-family: 'GmarketMedium';
 }
 
 /* body */
 
 .App-body {
   flex: 1 1 auto;
-  background-image: url('./images/back_img.png');
+  background-image: url('./images/back_img_big.png');
   background-repeat: no-repeat;
+  background-size: 100%;
   /* background-size: 100% auto; */
 }
 
@@ -73,6 +81,11 @@ body,
   src: url('./font/GmarketSansTTFLight.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'GmarketMedium';
+  src: url('./font/GmarketSansTTFMedium.ttf') format('truetype');
+}
+
 .Body-title {
   width: 900px;
   height: 300px;
@@ -80,17 +93,31 @@ body,
   margin-right: auto;
   padding-top: 100px;
 
-  font-size: 30px;
   font-family: 'TmonMonsori';
   color: white;
 }
 
-.Body-title > p {
-  font-size: 50px;
+.Body-title p {
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
+#title1 {
+  font-size: 55px;
+}
+
+#title2{
+  font-size: 145px;
+}
+
+#title3{
+  font-size: 35px;
+}
+
+
+
 .Body-content {
-  margin-top: 100px;
+  margin-top: 250px;
 
   width: 900px;
   margin-left: auto;
