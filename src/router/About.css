@@ -8,6 +8,8 @@ body,
   height: 100%;
   display: flex;
   flex-direction: column;
+
+  overflow-x: hidden;
 }
 
 @font-face {
@@ -61,8 +63,8 @@ body,
   font-size: 145px;
 }
 
-.title-attach{
-  font-size: 35px;
+.title_attach{
+  font-size: 25px;
 }
 
 .About-body-content {

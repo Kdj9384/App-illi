@@ -22,10 +22,10 @@ class Body extends React.Component {
                                 웡키와 함께하는 <br></br>
                                 코딩 교실
                             </p>
-                            <p className="cntbox-cnt">
+                            <div className="cntbox-cnt">
                                 <p>프로그래밍 기술을</p>
                                 <p>간단하고 재미있게 로봇과 함께 학습합니다.</p>
-                            </p>
+                            </div>
                         </div>
 
                     </div>
@@ -40,11 +40,11 @@ class Body extends React.Component {
                                 스티커북
                             </p>
 
-                            <p className="cntbox-cnt">
+                            <div className="cntbox-cnt">
                                 <p>AR기술을 통해</p>                  
                                 <p>위헙하고</p>
                                 <p>실제로 하기 어려운 실험을 진행합니다.</p>
-                            </p>
+                            </div>
                         </div>
                     </div>
 
