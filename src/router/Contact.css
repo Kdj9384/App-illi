@@ -30,14 +30,14 @@ body,
 
 /* body  */
 
-.Proj-body {
+.Contact-body {
   flex: 1 1 auto;
-  background-image: url('../images/back_img.png');
+  background-image: url('../images/back_img_contact.png');
   background-repeat: no-repeat;
   background-position: center top;
 }
 
-.Proj-body-title {
+.Contact-body-title {
   width: 900px;
   height: 300px;
   margin-left: auto;
@@ -48,7 +48,7 @@ body,
   color: white;
 }
 
-.Proj-body-title p {
+.Contact-body-title p {
   margin-top: 0px;
   margin-bottom: 30px;
 }
@@ -65,86 +65,59 @@ body,
   font-size: 35px;
 }
 
-.Proj-body-content {
+.Contact-body-content {
   /* margin-top: 100px; */
 
   width: 900px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 150px;
-
+  margin-bottom: 320px;
+  background-color: rgb(245, 245, 245);
 }
 
-.cntbox {
-  background-color: rgb(245, 245, 245);
+.txtbox {
   margin-bottom: 50px;
 
-  display: flex;
-  flex-direction: row;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 50px;
 
-  height: 360px;
 }
 
-.cntbox-reverse {
-  background-color: rgb(245, 245, 245);
-  margin-bottom: 50px;
+.txtbox-title {
+  font-family: 'TmonMonsori';
+  font-size: 50px;
+  margin-top: 0px;
 
-  display: flex;
-  flex-direction: row-reverse;
-  height: 360px;
+  margin-bottom: 16px;
 }
 
-.cntbox-img {
-  height: 360px;
-  width: 466px;
+.txtbox-title_attach {
+  font-family: 'TmonMonsori';
+  font-size : 25px;
+  line-height: 170%;
+
+  padding-left: 20px;
+
+}
+.Contact-bottom-logos {
+  margin-top: 20px;
+
 }
 
-.cntbox-img img{
-  height: 100%;
-  width: 466px;
-}
-
-.cntbox-text {
-  margin: 13px;
-  width: 100%;
-  background-color: white;
-}
-.cntbox-text p {
+#bottom-logo1 {
+  margin-right: 100px;
   margin-left: 30px;
-  margin-right: 15px;
-}
-.cntbox-title {
-  font-size: 30px;
-  font-family: 'TmonMonsori';
-  color: black;
+
+  margin-bottom: 20px;
 }
 
-.cntbox-cnt {
-  font-size: 17px;
-  font-family: 'Gmarket';
-  color: black;
-}
-
-.cntbox-cnt p {
-  margin-left: 0px;
-}
-
-.cntbox-cnt > button {
+#bottom-logo2 {
   margin-left: auto;
-  margin-right: auto;
-
-  font-size: 20px;
-  font-family: 'TmonMonsori';
-  color: white;
-  background: cornflowerblue;
-  border: 0px;
-
-  width: 333px;
-  height: 43px;
-
-  
 }
-
+.bottomBox {
+  height:40px;
+}
 .font-Gmarket {
   font-family: 'Gmarket';
 }

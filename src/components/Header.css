@@ -1,0 +1,47 @@
+/* header */
+
+.App-header {
+    flex: 0 0 auto;
+  
+    display: flex;
+    width: 900px;
+    height: 90px;
+    margin: 0 auto;
+  
+    padding-bottom: 10px;
+  }
+  
+  .App-header a {
+    margin-top: auto;
+  }
+  
+  .illi_logo {
+    width: 184px;
+    height: 50px;
+  }
+  .Header-nav {
+    margin-left: auto;
+    margin-top: auto;
+  }
+  
+  .Header-nav ul {
+    display: inline-flex;
+    flex-direction: row;
+  
+    margin-bottom: 0px;
+  }
+  
+  .Header-nav li {
+    flex: 0 0 auto;
+    list-style: none;
+  
+    margin-right: 20px;
+    margin-bottom: 5px;
+  
+  }
+  
+  .Header-nav li a {
+    text-decoration: none;
+    color: black;
+    font-family: 'GmarketMedium';
+  }
