@@ -122,6 +122,7 @@ body,
 }
 
 .cntbox-cnt {
+  padding-left: 30px;
   font-size: 17px;
   font-family: 'Gmarket';
   color: black;
