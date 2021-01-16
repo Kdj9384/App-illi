@@ -1,30 +1,65 @@
-import React from "react"
-import Footer from '../components/Footer'
+import React, {useState, useEffect } from 'react';
 import './About.css'
 import '../components/Footer.css'
+import firebase from '../firebase';
 
-class Body extends React.Component {
-  render() {
+
+export default function About () {
+    const [todoList, setTodoList] = useState();
+    const [infoList, setInfoList] = useState();
+    const [companyList, setCompanyList] = useState();
+    useEffect(() => {
+        const todoRef = firebase.database().ref('MainTitle');
+        todoRef.on('value', (snapshot) => {
+        const todos = snapshot.val();
+        const todoList = [];
+        for(let id in todos){
+            todoList.push(todos[id]);
+        }
+        console.log(todoList);
+        setTodoList(todoList);
+    });
+    }, []);
+    useEffect(() => {
+      const infoRef = firebase.database().ref('TeacherSpec');
+      infoRef.on('value', (snapshot) => {
+      const infos = snapshot.val();
+      const infoList = [];
+      for(let id in infos){
+        infoList.push(infos[id]);
+      }
+      console.log(infoList);
+      setInfoList(infoList);
+    });
+    }, []);
+    useEffect(() => {
+      const companyRef = firebase.database().ref('CompanySpec');
+      companyRef.on('value', (snapshot) => {
+      const companys = snapshot.val();
+      const companyList = [];
+      for(let id in companys){
+        companyList.push(companys[id]);
+      }
+      console.log(companyList);
+      setCompanyList(companyList);
+    });
+    }, []);
     return (
       <div className="About-body">
           <div className="About-body-title">
-            <p className="title">About 일리소프트 </p>
-            <p className="title_attach">일리소프트 현역</p>
+            <p className="title">{todoList ? todoList[1].Title : ''} </p>
+            <p className="title_attach">{todoList ? todoList[1].Subtitle : ''}</p>
           </div>
           <div className="About-body-content"> 
             <div className="txtbox">
               <p className="txtbox-title">강사 경력</p>
               <div className="txtbox-title_attach">
-                - 2019 전국 어플리케이션 개발대회 수상 <br></br>
-                - 국제 대학생 VR콘텐츠 제작 프로젝트 참여 <br></br>
-                - 한양대학교 교수학습지원센터 온라인 강의 3D 게임제작 개발 총괄 <br></br>
-                - Knowledge Factory Studio 게임제작과 VR/AR 환경개발 강의 총괄 <br></br>
+                {infoList ? infoList.map((teacher, index) => <p key={index} >- {teacher}<br></br></p>) : ''}
               </div>
 
               <p className="txtbox-title">회사 연혁</p>
               <p className="txtbox-title_attach">
-                5건 이상의 AR/VR/MR 외주용역 개발 수행 <br></br>
-                각종 교육 진행 중
+                {companyList ? companyList.map((company, index) => <p key={index}>- {company}<br></br></p>) : ''}
               </p>
             </div>
             <div className="bottomBox"></div>
@@ -32,19 +67,18 @@ class Body extends React.Component {
       </div>
     )
   }
-}
 
-class About extends React.Component {
-    render () {
-      return (
-        <div className="App">
+// class About extends React.Component {
+//     render () {
+//       return (
+//         <div className="App">
               
-          <Body></Body>
+//           <Body></Body>
     
-          <Footer></Footer>
+//           <Footer></Footer>
 
-        </div>
-      );
-    }
-  }
-export default About;
+//         </div>
+//       );
+//     }
+//   }
+// export default About;
